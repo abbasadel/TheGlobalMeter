@@ -6,12 +6,12 @@
 		<meta charset="utf-8" />
 		<title>
 			@section('title')
-			Laravel 4 Sample Site
+			{{Config::get('meter.title') }}
 			@show
 		</title>
-		<meta name="keywords" content="your, awesome, keywords, here" />
-		<meta name="author" content="Jon Doe" />
-		<meta name="description" content="Lorem ipsum dolor sit amet, nihil fabulas et sea, nam posse menandri scripserit no, mei." />
+		<meta name="keywords" content="{{Config::get('meter.keywords') }}" />
+		<meta name="author" content="{{Config::get('meter.auther') }}" />
+		<meta name="description" content="{{Config::get('meter.description') }}" />
 
 		<!-- Mobile Specific Metas
 		================================================== -->
