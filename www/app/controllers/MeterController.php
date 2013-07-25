@@ -10,11 +10,13 @@
  *
  * @author abbasadel
  */
-class MeterController extends BaseController{
+class MeterController extends BaseController {
 
-    public function getIndex(){
-        return View::make('site/home');
+    public function getIndex() {
+        $meter = Meter::find(1);
+        return View::make('site/home')->with('meter', $meter);
     }
+
 }
 
 ?>

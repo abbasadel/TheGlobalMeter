@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <title>
             @section('title')
-            {{Config::get('meter.title') }}
+            | {{Config::get('meter.title') }}
             @show
 
         </title>
@@ -56,14 +56,18 @@
                             <span class="icon-bar"></span>
                         </a>
 
-                        <div class="nav-collapse collapse">
+                        <div class="nav-collapse collapse"> 
                             <ul class="nav">
-                                <li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}"><i class="icon-home icon-top"></i> Home </i></a></li>
+                                <li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}"><img src="{{{ asset('assets/img/gm-logo3.png') }}}"/> </a></li>
                             </ul>
+                            
 
                             <ul class="nav pull-right">
+                                <li><a><i class="icon-download icon-top"></i> Download</a></li>
+
                                 <li><a><i class="icon-twitter icon-top"></i> 22,202</a></li>
                                 <li><a><i class="icon-facebook-sign icon-top"></i> 22,2023</a></li>
+
 
                                 @if (Auth::check())
                                 @if (Auth::user()->hasRole('admin'))
@@ -78,6 +82,10 @@
                                 -->
                                 @endif
                             </ul>
+                            
+                            <div id="meter-header-name">
+                                <h3>@yield('meter-name')</h3>
+                            </div>
                         </div>
                         <!-- ./ nav-collapse -->
                     </div>
@@ -105,12 +113,17 @@
 
         <div id="footer">
             <div class="container">
-                <p class="muted credit">Laravel 4 Starter Site on <a href="https://github.com/andrew13/Laravel-4-Bootstrap-Starter-Site">Github</a>.</p>
+                <p class="muted credit">
+                    © GlobalMeter.com
+                </p>
             </div>
         </div>
 
         <!-- Javascripts
         ================================================== -->
         {{ Basset::show('public.js') }}
+        
+
+        @yield('scripts')
     </body>
 </html>

@@ -1,36 +1,41 @@
 .navbar-inner {
-  background-color: #ad2e37 !important; /* fallback color, place your own */
+    background-color: #ad2e37 !important; /* fallback color, place your own */
 
-  /* Gradients for modern browsers, replace as you see fit */
-  background-image: -moz-linear-gradient(top, #ad2e37, #ad2e37) !important;
-  background-image: -ms-linear-gradient(top, #ad2e37, #ad2e37);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ad2e37), to(#ad2e37));
-  background-image: -webkit-linear-gradient(top, #ad2e37, #ad2e37);
-  background-image: -o-linear-gradient(top, #ad2e37, #ad2e37);
-  background-image: linear-gradient(top, #ad2e37, #ad2e37);
-  background-repeat: repeat-x;
+    /* Gradients for modern browsers, replace as you see fit */
+    background-image: -moz-linear-gradient(top, #ad2e37, #ad2e37) !important;
+    background-image: -ms-linear-gradient(top, #ad2e37, #ad2e37);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ad2e37), to(#ad2e37));
+    background-image: -webkit-linear-gradient(top, #ad2e37, #ad2e37);
+    background-image: -o-linear-gradient(top, #ad2e37, #ad2e37);
+    background-image: linear-gradient(top, #ad2e37, #ad2e37);
+    background-repeat: repeat-x;
 
-  /* IE8-9 gradient filter */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad2e37', endColorstr='#ad2e37', GradientType=0);
+    /* IE8-9 gradient filter */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad2e37', endColorstr='#ad2e37', GradientType=0);
 }
 
 
 .navbar .nav > li > a {
-float: none;
-padding: 10px 15px 10px;
-color: #f5e0e1;
-text-decoration: none;
-text-shadow: none;
+    float: none;
+    padding: 10px 15px 10px;
+    color: #f5e0e1;
+    text-decoration: none;
+    text-shadow: none;
 }
 
 
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #fff;
+}
+
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-color: #f5e0e1;
-text-decoration: none;
-background-color: inherit;
--webkit-box-shadow: inherit;
--moz-box-shadow: inherit;
-box-shadow: inherit;
+    color: #f5e0e1;
+    text-decoration: none;
+    background-color: inherit;
+    -webkit-box-shadow: inherit;
+    -moz-box-shadow: inherit;
+    box-shadow: inherit;
 }
 
 
@@ -38,4 +43,82 @@ box-shadow: inherit;
     font-size: 1.5em;
     display: block;
     text-align: center;
+}
+
+h1, h2,h3,h4,h5, body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+
+.icon-minus-sign {color: red}
+.icon-ok{color: forestgreen} 
+.icon-cog{color: darkorange}
+
+.container{
+    width: 800px;
+}
+/*
+.nav-tabs li.active span.title{
+    display: inline;
+    visibility:visible;
+}
+
+.nav-tabs li a:hover span.title{
+    display: inline;
+    visibility:visible;
+}
+*/
+.tab-content{
+    overflow: hidden;
+}
+
+#meter-description{
+    margin-top: 2em;
+}
+
+#meter-header-name{
+    width: 200px;
+    margin: auto;
+    color: #fff;
+    padding-top: 4px;
+}
+
+#meter-info span.number{
+    display: block;
+    font-size: 3em;
+    line-height: 1em;
+}
+#meter-info{
+    text-transform: uppercase;
+}
+
+#meter-info{
+    margin: 10px 0px;
+}
+
+.done{
+    color: #88a052;
+}
+
+.inprogress{
+    color: #d6963c;
+}
+
+.notdone{
+    color: #974f39;
+}
+
+#meter-info div{
+    padding-top: 10px;
+}
+
+a {
+color: #ad2e37;
+}
+
+a:hover,
+a:focus {
+  color: #cc3741;
+  text-decoration: underline;
 }
