@@ -37,8 +37,9 @@ return array(
 
             $collection->directory('assets/js', function($collection)
             {
-                $collection->javascript('//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
+                //$collection->javascript('//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js');
                 //$collection->add('bootstrap/bootstrap.js');
+                $collection->add('jquery-1.10.2.min.js');
                 $collection->requireDirectory('../../../vendor/twitter/bootstrap/js');
             })->apply('JsMin');
         },
