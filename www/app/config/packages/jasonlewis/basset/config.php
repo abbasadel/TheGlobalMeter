@@ -68,6 +68,21 @@ return array(
                 $collection->add('jquery.colorbox.js');
                 $collection->add('prettify.js');
             })->apply('JsMin');
+        },
+                
+        'chart' => function($collection)
+        {
+            $collection->directory('assets/css', function($collection)
+            {
+                $collection->add('chart.css');
+            })->apply('UriRewriteFilter')->apply('CssMin');
+
+            $collection->directory('assets/js', function($collection)
+            {
+                $collection->add('chart.min.js');
+                $collection->add('jquery.rotate.js');
+                $collection->add('script.js');
+            })->apply('JsMin');
         }
 
         // Basset default config

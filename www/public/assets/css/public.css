@@ -56,7 +56,7 @@ h1, h2,h3,h4,h5, body{
 .icon-cog{color: darkorange}
 
 .container{
-    width: 800px;
+    width: 900px;
 }
 /*
 .nav-tabs li.active span.title{
@@ -95,6 +95,7 @@ h1, h2,h3,h4,h5, body{
 
 #meter-info{
     margin: 10px 0px;
+    margin-left: 11px;
 }
 
 .done{
@@ -138,4 +139,9 @@ tr.promise {
 #catsTabs ul{
     overflow: hidden;
     height: 78px;
+}
+
+
+#header{
+    height:310px;
 }

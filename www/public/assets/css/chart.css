@@ -1,0 +1,110 @@
+/*@colorNotDone: #984f3b;
+@colorInProgress: #d6963b;
+@colorDone: #89a154;
+*/
+
+#meter {
+	position: absolute;
+	left: 50%;
+	width: 300px;
+	margin-left: -150px;
+	background-color: #FFF;
+        margin-top: -27px;
+}
+
+#meter #chart {
+	margin: 30px;
+}
+
+#meter #spacer {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	margin-top: -245px;
+	margin-left: 60px;
+	background-color: #503027;
+	border-radius: 100px;
+	-moz-box-shadow: inset 3px 3px 1px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: inset 3px 3px 1px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: inset 3px 3px 1px rgba(0, 0, 0, 0.25);
+	-ms-box-shadow: inset 3px 3px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 3px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+#meter #arrow {
+	position: absolute;
+	display: block;
+	margin-top: -228px;
+	margin-left: 99px;
+}
+
+#meter #icon {
+	position: absolute;
+	display: block;
+	margin-top: -201px;
+	margin-left: 104px;
+}
+
+#meter #time {
+	height: 50px;
+	background-color: #503027;
+	color: #FFF;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	-moz-box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.25);
+	-ms-box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0px 3px 1px rgba(0, 0, 0, 0.25);
+        margin-top: -25px;
+}
+
+#meter #time div {
+	width: 5%;
+	height: 50px;
+	background-color: #993f3f;
+	margin-top: -50px;
+}
+
+#meter #values {
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	margin-left: 200px;
+}
+
+#meter #values ul {
+	list-style: none;
+}
+
+#meter #values li {
+	margin-bottom: 20px;
+}
+
+#meter #values li > span {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#meter #values li > div {
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+#meter #values li > div > span {
+	font-weight: bold;
+}
+
+#meter #values li#done {
+	color: #89a154;
+}
+
+#meter #values li#inprogress {
+	color: #d6963b;
+}
+
+#meter #values li#todo {
+	color: #984f3b;
+}

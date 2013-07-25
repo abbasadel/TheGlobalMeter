@@ -5,13 +5,30 @@ My Meter
 @parent
 @stop
 
+@section('css')
+{{ Basset::show('chart.css') }}
+@parent
+@stop
+
 
 {{-- Content --}}
 @section('content')
 <br />
 <div class="row-fluid" id="header">
     <div class="span4" id="meter-description"><blockquote>{{$meter->description}}</blockquote></div>
-    <div class="span4"><img src="{{ '/' . $meter->logo}}" title="{{$meter->title}}" /></div>
+    <div class="span4">
+        <section id="meter">
+            <canvas id="chart" width="240" height="240"></canvas>
+            <div id="spacer"></div>
+            <img id="arrow" src="{{ asset('assets/img/arrow.png')}}" alt="" />
+            <img id="icon" src="{{ '/' . $meter->logo}}" alt="" />
+            <div id="time">
+                3 out of 60 months
+                <div></div>
+            </div>
+        </section>
+        <!--img src="{{ '/' . $meter->logo}}" title="{{$meter->title}}" /-->
+    </div>
     <div class="span4" id="meter-info">
         <div class="done"> 
             <span class="number">8</span> Overall promises <b>achieved</b>
@@ -87,9 +104,9 @@ My Meter
     $('tr.promise').click(
             function() {
                 var status = $(this).find('.description').is(":visible")
-                if(status){
+                if (status) {
                     $(this).find('.description').hide(200);
-                }else{
+                } else {
                     $(this).find('.description').show(200);
                 }
             });
@@ -97,8 +114,10 @@ My Meter
 
 
 </script>
+{{ Basset::show('chart.js') }}
 @stop
 
 @section('meter-name')
 {{$meter->title}}
 @stop
+

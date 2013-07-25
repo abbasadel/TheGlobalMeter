@@ -60,7 +60,7 @@
                             <ul class="nav">
                                 <li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}"><img src="{{{ asset('assets/img/gm-logo3.png') }}}"/> </a></li>
                             </ul>
-                            
+
 
                             <ul class="nav pull-right">
                                 <li><a><i class="icon-download icon-top"></i> Download</a></li>
@@ -82,7 +82,7 @@
                                 -->
                                 @endif
                             </ul>
-                            
+
                             <div id="meter-header-name">
                                 <h3>@yield('meter-name')</h3>
                             </div>
@@ -122,7 +122,6 @@
         <!-- Javascripts
         ================================================== -->
         {{ Basset::show('public.js') }}
-        
 
         @yield('scripts')
     </body>
