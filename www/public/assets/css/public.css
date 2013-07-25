@@ -1,0 +1,41 @@
+.navbar-inner {
+  background-color: #ad2e37 !important; /* fallback color, place your own */
+
+  /* Gradients for modern browsers, replace as you see fit */
+  background-image: -moz-linear-gradient(top, #ad2e37, #ad2e37) !important;
+  background-image: -ms-linear-gradient(top, #ad2e37, #ad2e37);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ad2e37), to(#ad2e37));
+  background-image: -webkit-linear-gradient(top, #ad2e37, #ad2e37);
+  background-image: -o-linear-gradient(top, #ad2e37, #ad2e37);
+  background-image: linear-gradient(top, #ad2e37, #ad2e37);
+  background-repeat: repeat-x;
+
+  /* IE8-9 gradient filter */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ad2e37', endColorstr='#ad2e37', GradientType=0);
+}
+
+
+.navbar .nav > li > a {
+float: none;
+padding: 10px 15px 10px;
+color: #f5e0e1;
+text-decoration: none;
+text-shadow: none;
+}
+
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+color: #f5e0e1;
+text-decoration: none;
+background-color: inherit;
+-webkit-box-shadow: inherit;
+-moz-box-shadow: inherit;
+box-shadow: inherit;
+}
+
+
+.navbar-inner .icon-top{
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+}
