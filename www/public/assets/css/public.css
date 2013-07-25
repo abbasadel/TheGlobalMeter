@@ -26,7 +26,7 @@
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
@@ -114,11 +114,28 @@ h1, h2,h3,h4,h5, body{
 }
 
 a {
-color: #ad2e37;
+    color: #ad2e37;
 }
 
 a:hover,
 a:focus {
-  color: #cc3741;
-  text-decoration: underline;
+    color: #cc3741;
+    text-decoration: underline;
+}
+
+.promise .description{
+    display: none;
+    color: #333;
+    margin: -5px 2px 0px 16px;
+    padding-left: 7px;
+}
+
+tr.promise {
+    cursor: pointer;
+}
+
+
+#catsTabs ul{
+    overflow: hidden;
+    height: 78px;
 }
