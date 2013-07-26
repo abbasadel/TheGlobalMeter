@@ -28,7 +28,7 @@ $env = $app->detectEnvironment(array(
 
     'local' => array('laravel'), // Change this to your local machine hostname.
     'staging' => array('your-staging-machine-name'),
-    'production' => array('your-production-machine-name'),
+    'production' => array('server.zabatak.com'),
 
 ));
 
