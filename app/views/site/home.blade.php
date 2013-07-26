@@ -1,7 +1,7 @@
 @extends('site.layouts.meter')
 {{-- Web site Title --}}
 @section('title')
-My Meter
+{{$meter->title}}
 @parent
 @stop
 
