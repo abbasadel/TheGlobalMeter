@@ -41,3 +41,12 @@ dwsync.xml
 composer.phar
 composer.lock
 /www/public/assets/compiled/
+
+/bootstrap/compiled.php
+/vendor
+composer.phar
+composer.lock
+.DS_Store
+/tmp
+/public/assets/compiled/
+
