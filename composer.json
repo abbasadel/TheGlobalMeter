@@ -55,5 +55,11 @@
     "config": {
         "preferred-install": "dist"
     },
+    "extra": {
+        "heroku": {
+            "document-root": "public",
+            "index-document": "index.php"
+        }
+    },
     "minimum-stability": "dev"
 }
